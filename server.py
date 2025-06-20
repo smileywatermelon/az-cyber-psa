@@ -157,5 +157,10 @@ def submit_password():
 def success():
     return render_template('final.html')
 
+@app.route("/AccountChooser/")
+def fake():
+    return redirect("/",)
+
+
 if __name__ == "__main__":
     app.run(debug=True, use_reloader=False)
